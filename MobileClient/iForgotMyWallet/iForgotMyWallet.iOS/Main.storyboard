@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gBN-PH-ryU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlD-h4-cbs">
+                                <rect key="frame" x="213" y="186" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="Ico-KF-KoA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="-382"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tKo-l1-FHy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gBN-PH-ryU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1jp-iz-vOB">
+                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CEb-F6-QwS"/>
+                        <segue destination="7" kind="relationship" relationship="viewControllers" id="37"/>
+                        <segue destination="42" kind="relationship" relationship="viewControllers" id="74"/>
+                        <segue destination="lXW-va-tx3" kind="relationship" relationship="viewControllers" id="15h-Y8-eu2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dI-TG-heg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="318"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="6">
+            <objects>
+                <viewController id="7" sceneMemberID="viewController" customClass="AccountViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" id="36"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="330"/>
+        </scene>
+        <!--Pay-->
+        <scene sceneID="41">
+            <objects>
+                <viewController id="42" sceneMemberID="viewController" customClass="PaymentsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39"/>
+                        <viewControllerLayoutGuide type="bottom" id="40"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pay" id="73"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="1031"/>
+        </scene>
+        <!--Receive Payment-->
+        <scene sceneID="xvE-hD-9RB">
+            <objects>
+                <viewController id="lXW-va-tx3" sceneMemberID="viewController" customClass="ReceivePaymentViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INw-Je-XUq"/>
+                        <viewControllerLayoutGuide type="bottom" id="nRE-3x-nx1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2l-4E-ejV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Receive Payment" id="ZTY-k4-qRa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVj-Ou-zp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="1749"/>
+        </scene>
+    </scenes>
+</document>
