@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using iForgotMyWallet.Core;
 using UIKit;
 
 namespace iForgotMyWallet.iOS
@@ -20,7 +21,22 @@ namespace iForgotMyWallet.iOS
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
+			//Configure the SQlite as Serialized to be thread safe
+			SQLitePCL.Batteries.Init ();
+			var result = SQLitePCL.raw.sqlite3_config (SQLitePCL.raw.SQLITE_CONFIG_SERIALIZED);
+			if (result != SQLitePCL.raw.SQLITE_OK) {
+				System.Diagnostics.Debug.WriteLine ($"Unable to set SQLIte in Serialized mode (error code = {result})");
+			}
+
+			//Set the SQlitePCL provider (iOS)
+			SQLitePCL.raw.SetProvider (new SQLitePCL.SQLite3Provider_sqlite3 ());
+
+
+
+			ServiceContainer.Register<IGeneralMethods> (() => new GeneralMethods ());
+
 			return true;
+
 		}
 
 		public override void OnResignActivation (UIApplication application)

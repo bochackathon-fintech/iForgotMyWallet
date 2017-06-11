@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?colorPrimary"
+        android:textColor="#ffffffff"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Awaiting Payment..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/txtStatus"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/app_primary" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOKAlert"
+        android:layout_margin="20dp" />
+</LinearLayout>

@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 using SQLite;
 
 namespace iForgotMyWallet.Core
@@ -13,6 +14,20 @@ namespace iForgotMyWallet.Core
 			set { 
 				base.Id = value; 
 				id = value;}
+		}
+
+
+
+		private string name;
+
+		[JsonProperty (PropertyName = "name")]
+		public string Name {
+			get { return name; }
+			set {
+				var oldValue = name;
+				if (oldValue != value)
+					name = value;
+			}
 		}
 
 	}

@@ -48,10 +48,14 @@ namespace iForgotMyWallet.iOS
 			string Title = string.Empty;
 			string SubTitle = string.Empty;
 
-			if (!string.IsNullOrEmpty (model.To)) 
-				Title = string.Format ("Money send to {0}",model.To);
-			else
-				Title = string.Format ("Money received from {0}", model.From);
+			if (!string.IsNullOrEmpty(model.To)) {
+				cell.DetailTextLabel.TextColor = UIColor.Red;
+				Title = string.Format("Money send to {0}", model.To);
+			}
+			else { 
+				Title = string.Format("Money received from {0}", model.From);
+				cell.DetailTextLabel.TextColor = UIColor.Green;
+			}
 
 			SubTitle = string.Format ("€{0}", model.Amount);
 

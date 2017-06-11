@@ -35,7 +35,7 @@ public abstract class EntityBase<TKey> : IDataEntity<TKey>
 			}
 		}
 
-		private bool isActive = true;
+		private bool isActive = false;
 
 		public bool IsActive {
 			get { return isActive; }

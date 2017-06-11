@@ -59,6 +59,51 @@ namespace iForgotMyWallet.Core
 					amount = value;
 			}
 		}
-		
+
+
+		private string description;
+
+		public string Description {
+			get { return description; }
+			set {
+				var oldValue = description;
+				if (oldValue != value)
+					description = value;
+			}
+		}
+
+		private string userId;
+
+		public string UserId {
+			get { return userId; }
+			set {
+				var oldValue = userId;
+				if (oldValue != value)
+					userId = value;
+			}
+		}
+
+		private string acc_id;
+
+		public string Acc_id {
+			get { return acc_id; }
+			set {
+				var oldValue = acc_id;
+				if (oldValue != value)
+					acc_id = value;
+			}
+		}
+
+
+		private string account_id;
+
+		public string Account_id {
+			get { return account_id; }
+			set {
+				var oldValue = account_id;
+				if (oldValue != value)
+					account_id = value;
+			}
+		}
 	}
 }

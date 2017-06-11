@@ -6,7 +6,11 @@ namespace iForgotMyWallet.Core
 {
 	public class Session
 	{
-		UserProfile CurrentUser { get; set; }
-		List<IEnumerable> Accounts { get; set;}
+		public UserProfile CurrentUser { get; set; }
+
+		public IEnumerable<Account> Accounts { get; set; }
+
+		public Account ActiveAccount { get; internal set; }
+
 	}
 }

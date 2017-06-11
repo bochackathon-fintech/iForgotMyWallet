@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+         <!--<item name="android:statusBarColor">@android:color/transparent</item> -->
+		 <!--<item name="android:navigationBarColor">@color/app_primary_dark</item> -->
+		<item name="android:statusBarColor">@color/app_primary</item>
+        <item name="android:navigationBarColor">@color/app_primary</item>
+
+		 <item name="android:textAppearanceButton">@style/ButtonTextWhiteTheme</item>
+        <item name="colorButtonNormal">@color/app_primary</item>
+		<item name="colorControlHighlight">@color/material_light_green_500</item>
+    </style>
+
+		<style name="RejectButtonTheme" parent="BaseTheme">
+	        <item name="colorButtonNormal">@color/material_red_A700</item>
+			<item name="colorControlHighlight">@color/material_red_A200</item>
+    	</style>
+
+		<style name="CallButtonTheme" parent="BaseTheme">
+	        <item name="colorButtonNormal">@color/material_blue_gray_700</item>
+			<item name="colorControlHighlight">@color/material_blue_gray_300</item>
+    	</style>
+	
+	  <style name="ButtonTextWhiteTheme" parent="Base.Widget.AppCompat.Button">  
+   			<item name="android:textColor">@color/white</item>
+		    <item name="android:textSize">14sp</item>
+		    <item name="android:textAllCaps">true</item>
+	</style>  
+	
+</resources>
