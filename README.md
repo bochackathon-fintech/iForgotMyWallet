@@ -30,12 +30,9 @@ Deploy the webservices (wwwroot folder) under a php server.
 Use it with the folwoing functions http://localhost/api/
 
 Example:
-
 Post parameters
-
 method: getUserData
 api: 1
-
 userid: 3
 
 
